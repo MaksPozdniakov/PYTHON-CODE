@@ -39,4 +39,7 @@ a = 3
 b = 4
 c = 1
 Delta = (b*2) - (4*a*c)
-print("Delta equals:", abs(Delta))
+print(type(2+3.0*5))
+
+type(2+3.0*5)
+print
