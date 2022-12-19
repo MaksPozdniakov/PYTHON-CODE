@@ -27,3 +27,13 @@ print(y)
 float(3)
 int(3.09)
 print(float, int)
+
+
+number = 7
+if number > 2:
+    print(number)
+    number -= 1
+print(number)
+
+if 8 > 7:
+print("Yep")

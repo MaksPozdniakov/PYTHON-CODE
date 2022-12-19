@@ -19,4 +19,4 @@ name = input("Enter your name: ...")
 birth_year = int(input("Enter your birth Year: ..."))
 curr_year = int(input("Enter the current Year: ..."))
 
-print(name, ",", "you are", curr_year - birth_year, "years old")
+print(name, "you are", curr_year - birth_year, "years old")
