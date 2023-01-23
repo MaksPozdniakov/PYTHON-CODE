@@ -96,3 +96,42 @@ print("John" in student_grades)  # returns true if the element indeed belongs
 # for k in student_grades.keys():
 #     # print k
 # same with .values instead of .keys
+
+print(student_grades.items())
+print(list(student_grades.items()))
+for i in student_grades.items():
+    print(i)
+
+for k, v in student_grades.items():
+    print(k, v)
+
+print(student_grades)
+print(len(student_grades))
+
+student_grades.clear()
+print(student_grades)
+
+student_grades = {"Ana": "B", "Katy": "A", "John": "B"}
+student_grades_01 = student_grades
+print(student_grades_01)
+
+student_grades["Ana"] = "C"
+print(student_grades)
+print(student_grades_01)  # not a copy of the object, but a reference.
+# technically the same object under a different name
+
+# student_grades.copy() #making a copy
+
+data = {
+    "key1": {
+        "inner_key1": 1,
+        "inner_key2": 2
+    },
+    "key2": {
+        "inner_key1": 3,
+        "inner_key2": 4
+    }
+}
+
+value = data.get("key1").get("inner_key1", "KEY NOT FOUND ERROR")
+print(value)
