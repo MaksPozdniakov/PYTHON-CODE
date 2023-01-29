@@ -11,8 +11,16 @@ use f-string, function, invoke the function with examplary data
 '''
 
 
-def swap_two_values(x, y):
+def swap_two_values(x, y) -> None:
     '''
+    Functions swaps the values of x and y.
+
+    Parameters:
+    (x)
+    (y)
+
+    Returns:
+    None
 
     '''
     print(f'x = {y}, y = {x}')

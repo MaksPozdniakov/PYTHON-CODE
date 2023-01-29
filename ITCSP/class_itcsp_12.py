@@ -87,8 +87,7 @@ def send_greetings(name):
 
 
 def send_self_presentation(name, surname, birth_year, current_year):
-
-'''
+    '''
 Function returns specific presentation of the person...
 
 Parameters:
@@ -99,9 +98,10 @@ Parameters:
 Returns:
     (str): presentation
     e.g. Hello, my name is Jessica Jones and I am 25 years old
-'''
-age = current_year - birth_year
-return f'Hello, my name is {name}, {surname} and I am {age} years old'
+    '''
+    age = current_year - birth_year
+    return f'Hello, my name is {name}, {surname} and I am {age} years old'
+
 
 print(send_self_presentation("Jessica", "Jones", 1998, 2023))
 print(send_self_presentation.__doc__)
