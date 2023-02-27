@@ -1,3 +1,5 @@
+"TRAINING BEFORE EXAM"
+
 '''
 ITCSP, Final Programming Task, 1LMT, group 01
 (30 points)
