@@ -22,9 +22,7 @@ def map_longest(text: str) -> tuple:
 
     '''
     word_list = text.split()
-    # make list of tuples with (word, length)
     word_tuples = list(map(lambda word: (word, len(word)), word_list))
-    # sort list by the length
     word_tuples.sort(key=lambda w: w[1])
     return word_tuples[-1]
 
@@ -43,4 +41,4 @@ its development and deployment with caution and responsibility.
 
 result = map_longest(text)
 print(
-    f"The longest word in the text is '{result[0]}' with the length of {result[1]} characters")
+    f"The longest word in the text is '{result[0]}' with the length of {result[1]} characters.")
