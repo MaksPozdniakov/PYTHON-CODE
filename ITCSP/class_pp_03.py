@@ -162,10 +162,10 @@
 # print(product_price_increased)
 
 
-shakespeare = "When forty winters shall besiege thy brow, And sig deep trenches in the beautys field, ..."
-words = shakespeare.replace(",", "").replace(".", "").split()
-word_length = {word: len(word) for word in words}
-sorted_word_length = sorted(
-    word_length.items(), key=lambda item: item[1], reverse=True)
-print(sorted_word_length)
-print(dict(word_length))  # normally 'sorted' returns list
+# shakespeare = "When forty winters shall besiege thy brow, And sig deep trenches in the beautys field, ..."
+# words = shakespeare.replace(",", "").replace(".", "").split()
+# word_length = {word: len(word) for word in words}
+# sorted_word_length = sorted(
+#     word_length.items(), key=lambda item: item[1], reverse=True)
+# print(sorted_word_length)
+# print(dict(word_length))  # normally 'sorted' returns list
