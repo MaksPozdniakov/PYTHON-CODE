@@ -30,3 +30,19 @@ def most_freq_character(sentence):
     Returns:
         List of tuples
     '''
+
+    characters_freq = {}
+    sentence = sentence.lower().replace(" ", "")
+    for character in sentence:
+        if character in characters_freq.keys():
+            characters_freq[character] += 1
+        else:
+            characters_freq[character] = 1  # first occurence of character
+    sorted_characters_freq = sorted(characters_freq.items(),
+                                    key=lambda item: item[1],
+                                    reverse=True)
+    return characters_freq
+
+
+sentence = "Alalalalalaalalaal alalala alalala alalala"
+print(most_freq_character(sentence))
