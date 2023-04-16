@@ -10,6 +10,7 @@ Expected result:
 The longest word is 'trenches' with the length 8 characters.
 
 '''
+import string
 
 
 def get_longest_word(text: str) -> tuple[str, int]:
@@ -36,3 +37,12 @@ def get_longest_word(text: str) -> tuple[str, int]:
 
 # print(
 #     f"The longest word is '{word}' with the length {sorted_word_length} characters.")
+
+    text = text.replace('.', '').replace(',', '')
+    word_list = text.split()
+    word_tups = [(word.lower(), len(word)) for word in word_list]
+    return sorted(word_tups, key=lambda word: word[1], reverse=True)
+
+
+shakespeare = 'When forty winters shall besiege thy brow, And dig deep trenches in thy beautys field, ....'
+print(get_longest_word(shakespeare))

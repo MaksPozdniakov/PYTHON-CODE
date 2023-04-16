@@ -14,8 +14,8 @@ for x in dic.values():
 d, c = (5, 6)
 print(d, c)
 
-for k, v in dic.items():
-    print k, v
+# for k, v in dic.items():
+#     print k, v
 
 # home task
 # removing punctuation, lowering

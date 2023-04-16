@@ -53,3 +53,17 @@ text = input("Enter text to check whether it is a palindrome: ")
 
 palindrome = is_palindrome(text)
 print(palindrome)
+
+
+# solution by teacher.
+def is_palindrome(text):
+    ''' 
+    input: string 
+    output: boolean 
+    '''
+    # your code below
+    text = text.replace(' ', '').replace('.', '').replace(',', '').lower()
+    reversed_text = text[::-1]
+    if text == reversed_text:
+        return True
+    return False

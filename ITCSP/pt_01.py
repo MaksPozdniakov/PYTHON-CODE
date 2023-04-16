@@ -27,26 +27,13 @@ def remove_punctuation(text: str, remove_space: bool = False) -> str:
     '''
     import string
     punct = string.punctuation
+    text = text.translate(str.maketrans('', '', punct))
+    if remove_space:
+        text = text.replace(' ', '')
+    return text
 
 
-'''
-Programming task 01, file pt_01.py, 20 min.
-Grade : 5 points
-
-Write a program that will remove punctuation from any string, optionally it should remove spaces.
-Implement the function definition
-
-Expected exemplary result:
-Here is a text without punctuations: 'Wow Thats amazing How did you do it Im so impressed Youre awesome brilliant and talented Congratulations Well done Bravo'
-
-Send to Teams !!!
-'''
-
-
-sample_text = "Wow! That's amazing. How did you do it? I'm so impressed. You're awesome, brilliant, and talented. Congratulations! Well done. Bravo!"
-
-
-def remove_punctuation(text: str, remove_space: bool = False) -> str:
+def remove_punctuation_join(text: str, remove_space: bool = True) -> str:
     '''
     Function removes punctuations !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ optionally it can remove spaces
 
@@ -57,14 +44,13 @@ def remove_punctuation(text: str, remove_space: bool = False) -> str:
         text without punctuation, optionally spaces.
     '''
     import string
-    punct = string.punctuation
-
-    text_clean = []
-    sample_text = sample_text.lower().replace(" ", "")
-
-    text_clean = word.translate(str.maketrans('', '', string.punctuation))
-    text_clean = text_clean.lower()
-    return text_clean
+    #punct = string.punctuation
+    # if remove_space:
+    #   punct += ' '
+    return ''.join(i for i in text if i not in string.punctuation and not (remove_space and i == " "))
 
 
-result: [str: bool] = remove_punctuation(sample_text)
+result = remove_punctuation_join(sample_text, True)
+print(result)
+print(remove_punctuation_join(sample_text))
+print(remove_punctuation_join(sample_text, False))
