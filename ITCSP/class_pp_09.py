@@ -103,7 +103,37 @@ if re.search("^abc", sys.argv[1]):  # start with abc
 else:
     print("no match")
 
+if re.search("^[abc]", sys.argv[1]):  # start with abc
+    print("a match")
+else:
+    print("no match")
+
+if re.search("^[^abc]", sys.argv[1]):  # start with abc
+    print("a match")
+else:
+    print("no match")
+
 if re.search("[a-d]", sys.argv[1]):
+    print("a match")
+else:
+    print("no match")
+
+if re.search("[a-df]", sys.argv[1]):
+    print("a match")
+else:
+    print("no match")
+
+if re.search("[0-5][0-2]", sys.argv[1]):
+    print("a match")
+else:
+    print("no match")
+
+if re.search("[a-dA-D]", sys.argv[1]):
+    print("a match")
+else:
+    print("no match")
+
+if re.search("[b-e]a$", sys.argv[1]):
     print("a match")
 else:
     print("no match")

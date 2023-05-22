@@ -79,7 +79,7 @@
 inFile = open("testfile.txt", "r", encoding="utf-8")
 stuff = inFile.read()  # read from it
 inFile.close()
-lines = stuff.print("\n")  # split into lines
+lines = stuff.print("\n")  # split into lines #??
 # print lines and lenghts
 for line in lines:
     print(f"{line}, : {len(line)} characters")
