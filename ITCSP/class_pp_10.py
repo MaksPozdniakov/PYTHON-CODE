@@ -76,6 +76,6 @@ import sys
 # split() function - returns a list where the string has been split at each match
 # white space - space, tab, enter, etc. (horizontal and vertical)
 
-txt = "This is sbananaes. Banana is good. banana."
-L1 = re.split("\s", txt)
-print(L1)
+# txt = "This is sbananaes. Banana is good. banana."
+# L1 = re.split("\s", txt)
+# print(L1)
