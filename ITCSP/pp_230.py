@@ -1,6 +1,6 @@
 '''
 Exercise 230 (file pp_230.py)
-Create a class that will be responsible for reading text from file and writting text to file
+Create a class that will be responsible for reading text from file and writing text to file
 
 Class data attributes:
 filepath: str, file path of the file
